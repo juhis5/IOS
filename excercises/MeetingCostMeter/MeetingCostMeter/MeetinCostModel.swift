@@ -17,6 +17,15 @@ class MeetingCostModel {
     var startMeetingDate :NSDate?
     var currency :String
     
+    var currentCostOfMeeting :Double {
+        get {
+            return getCurrentCostOfMeeting()
+        }
+        set {
+            
+        }
+    }
+    
     init(numberOfParticipants: Int, avarageHourSalary: Double, currency: String) {
         self.numberOfParticipants = numberOfParticipants
         self.avarageHourSalary = avarageHourSalary
@@ -30,7 +39,7 @@ class MeetingCostModel {
         startMeetingDate = NSDate()
     }
     
-    func getCurrentCostOfMeeting() ->Double {
+    private func getCurrentCostOfMeeting() ->Double {
         let tmpDate = NSDate()
         let returnable :Double
         

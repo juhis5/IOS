@@ -15,6 +15,7 @@
 		8B4FF9881D80213A003416FF /* MeetingCostMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FF9871D80213A003416FF /* MeetingCostMeterTests.swift */; };
 		8B4FF9931D80213A003416FF /* MeetingCostMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FF9921D80213A003416FF /* MeetingCostMeterUITests.swift */; };
 		8B4FF9A11D8021D0003416FF /* MeetinCostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FF9A01D8021D0003416FF /* MeetinCostModel.swift */; };
+		8B4FF9A31D803334003416FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4FF9A21D803334003416FF /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8B4FF9921D80213A003416FF /* MeetingCostMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCostMeterUITests.swift; sourceTree = "<group>"; };
 		8B4FF9941D80213A003416FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B4FF9A01D8021D0003416FF /* MeetinCostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetinCostModel.swift; sourceTree = "<group>"; };
+		8B4FF9A21D803334003416FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B4FF9A31D803334003416FF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		8B4FF9661D80213A003416FF = {
 			isa = PBXGroup;
 			children = (
+				8B4FF9A21D803334003416FF /* CoreLocation.framework */,
 				8B4FF9711D80213A003416FF /* MeetingCostMeter */,
 				8B4FF9861D80213A003416FF /* MeetingCostMeterTests */,
 				8B4FF9911D80213A003416FF /* MeetingCostMeterUITests */,
