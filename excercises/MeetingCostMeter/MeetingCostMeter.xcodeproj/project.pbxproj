@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B4FF9731D80213A003416FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FF9721D80213A003416FF /* AppDelegate.swift */; };
+		8B4FF9751D80213A003416FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FF9741D80213A003416FF /* ViewController.swift */; };
+		8B4FF9781D80213A003416FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4FF9761D80213A003416FF /* Main.storyboard */; };
+		8B4FF97A1D80213A003416FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B4FF9791D80213A003416FF /* Assets.xcassets */; };
+		8B4FF97D1D80213A003416FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B4FF97B1D80213A003416FF /* LaunchScreen.storyboard */; };
+		8B4FF9881D80213A003416FF /* MeetingCostMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FF9871D80213A003416FF /* MeetingCostMeterTests.swift */; };
+		8B4FF9931D80213A003416FF /* MeetingCostMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FF9921D80213A003416FF /* MeetingCostMeterUITests.swift */; };
+		8B4FF9A11D8021D0003416FF /* MeetinCostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FF9A01D8021D0003416FF /* MeetinCostModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B4FF9841D80213A003416FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B4FF9671D80213A003416FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4FF96E1D80213A003416FF;
+			remoteInfo = MeetingCostMeter;
+		};
+		8B4FF98F1D80213A003416FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B4FF9671D80213A003416FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B4FF96E1D80213A003416FF;
+			remoteInfo = MeetingCostMeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B4FF96F1D80213A003416FF /* MeetingCostMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingCostMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4FF9721D80213A003416FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B4FF9741D80213A003416FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B4FF9771D80213A003416FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B4FF9791D80213A003416FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B4FF97C1D80213A003416FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B4FF97E1D80213A003416FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B4FF9831D80213A003416FF /* MeetingCostMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetingCostMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4FF9871D80213A003416FF /* MeetingCostMeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCostMeterTests.swift; sourceTree = "<group>"; };
+		8B4FF9891D80213A003416FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B4FF98E1D80213A003416FF /* MeetingCostMeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetingCostMeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4FF9921D80213A003416FF /* MeetingCostMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCostMeterUITests.swift; sourceTree = "<group>"; };
+		8B4FF9941D80213A003416FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B4FF9A01D8021D0003416FF /* MeetinCostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetinCostModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B4FF96C1D80213A003416FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4FF9801D80213A003416FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4FF98B1D80213A003416FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B4FF9661D80213A003416FF = {
+			isa = PBXGroup;
+			children = (
+				8B4FF9711D80213A003416FF /* MeetingCostMeter */,
+				8B4FF9861D80213A003416FF /* MeetingCostMeterTests */,
+				8B4FF9911D80213A003416FF /* MeetingCostMeterUITests */,
+				8B4FF9701D80213A003416FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B4FF9701D80213A003416FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B4FF96F1D80213A003416FF /* MeetingCostMeter.app */,
+				8B4FF9831D80213A003416FF /* MeetingCostMeterTests.xctest */,
+				8B4FF98E1D80213A003416FF /* MeetingCostMeterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B4FF9711D80213A003416FF /* MeetingCostMeter */ = {
+			isa = PBXGroup;
+			children = (
+				8B4FF9721D80213A003416FF /* AppDelegate.swift */,
+				8B4FF9741D80213A003416FF /* ViewController.swift */,
+				8B4FF9761D80213A003416FF /* Main.storyboard */,
+				8B4FF9791D80213A003416FF /* Assets.xcassets */,
+				8B4FF97B1D80213A003416FF /* LaunchScreen.storyboard */,
+				8B4FF97E1D80213A003416FF /* Info.plist */,
+				8B4FF9A01D8021D0003416FF /* MeetinCostModel.swift */,
+			);
+			path = MeetingCostMeter;
+			sourceTree = "<group>";
+		};
+		8B4FF9861D80213A003416FF /* MeetingCostMeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B4FF9871D80213A003416FF /* MeetingCostMeterTests.swift */,
+				8B4FF9891D80213A003416FF /* Info.plist */,
+			);
+			path = MeetingCostMeterTests;
+			sourceTree = "<group>";
+		};
+		8B4FF9911D80213A003416FF /* MeetingCostMeterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B4FF9921D80213A003416FF /* MeetingCostMeterUITests.swift */,
+				8B4FF9941D80213A003416FF /* Info.plist */,
+			);
+			path = MeetingCostMeterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B4FF96E1D80213A003416FF /* MeetingCostMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4FF9971D80213A003416FF /* Build configuration list for PBXNativeTarget "MeetingCostMeter" */;
+			buildPhases = (
+				8B4FF96B1D80213A003416FF /* Sources */,
+				8B4FF96C1D80213A003416FF /* Frameworks */,
+				8B4FF96D1D80213A003416FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetingCostMeter;
+			productName = MeetingCostMeter;
+			productReference = 8B4FF96F1D80213A003416FF /* MeetingCostMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B4FF9821D80213A003416FF /* MeetingCostMeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4FF99A1D80213A003416FF /* Build configuration list for PBXNativeTarget "MeetingCostMeterTests" */;
+			buildPhases = (
+				8B4FF97F1D80213A003416FF /* Sources */,
+				8B4FF9801D80213A003416FF /* Frameworks */,
+				8B4FF9811D80213A003416FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B4FF9851D80213A003416FF /* PBXTargetDependency */,
+			);
+			name = MeetingCostMeterTests;
+			productName = MeetingCostMeterTests;
+			productReference = 8B4FF9831D80213A003416FF /* MeetingCostMeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B4FF98D1D80213A003416FF /* MeetingCostMeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B4FF99D1D80213A003416FF /* Build configuration list for PBXNativeTarget "MeetingCostMeterUITests" */;
+			buildPhases = (
+				8B4FF98A1D80213A003416FF /* Sources */,
+				8B4FF98B1D80213A003416FF /* Frameworks */,
+				8B4FF98C1D80213A003416FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B4FF9901D80213A003416FF /* PBXTargetDependency */,
+			);
+			name = MeetingCostMeterUITests;
+			productName = MeetingCostMeterUITests;
+			productReference = 8B4FF98E1D80213A003416FF /* MeetingCostMeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B4FF9671D80213A003416FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Juho Lahtinen";
+				TargetAttributes = {
+					8B4FF96E1D80213A003416FF = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					8B4FF9821D80213A003416FF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8B4FF96E1D80213A003416FF;
+					};
+					8B4FF98D1D80213A003416FF = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8B4FF96E1D80213A003416FF;
+					};
+				};
+			};
+			buildConfigurationList = 8B4FF96A1D80213A003416FF /* Build configuration list for PBXProject "MeetingCostMeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B4FF9661D80213A003416FF;
+			productRefGroup = 8B4FF9701D80213A003416FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B4FF96E1D80213A003416FF /* MeetingCostMeter */,
+				8B4FF9821D80213A003416FF /* MeetingCostMeterTests */,
+				8B4FF98D1D80213A003416FF /* MeetingCostMeterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B4FF96D1D80213A003416FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4FF97D1D80213A003416FF /* LaunchScreen.storyboard in Resources */,
+				8B4FF97A1D80213A003416FF /* Assets.xcassets in Resources */,
+				8B4FF9781D80213A003416FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4FF9811D80213A003416FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4FF98C1D80213A003416FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B4FF96B1D80213A003416FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4FF9751D80213A003416FF /* ViewController.swift in Sources */,
+				8B4FF9A11D8021D0003416FF /* MeetinCostModel.swift in Sources */,
+				8B4FF9731D80213A003416FF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4FF97F1D80213A003416FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4FF9881D80213A003416FF /* MeetingCostMeterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B4FF98A1D80213A003416FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4FF9931D80213A003416FF /* MeetingCostMeterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B4FF9851D80213A003416FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B4FF96E1D80213A003416FF /* MeetingCostMeter */;
+			targetProxy = 8B4FF9841D80213A003416FF /* PBXContainerItemProxy */;
+		};
+		8B4FF9901D80213A003416FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B4FF96E1D80213A003416FF /* MeetingCostMeter */;
+			targetProxy = 8B4FF98F1D80213A003416FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B4FF9761D80213A003416FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B4FF9771D80213A003416FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B4FF97B1D80213A003416FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B4FF97C1D80213A003416FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B4FF9951D80213A003416FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B4FF9961D80213A003416FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B4FF9981D80213A003416FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MeetingCostMeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = excercises.oneandonly.MeetingCostMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8B4FF9991D80213A003416FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MeetingCostMeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = excercises.oneandonly.MeetingCostMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8B4FF99B1D80213A003416FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeetingCostMeterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = excercises.oneandonly.MeetingCostMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetingCostMeter.app/MeetingCostMeter";
+			};
+			name = Debug;
+		};
+		8B4FF99C1D80213A003416FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeetingCostMeterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = excercises.oneandonly.MeetingCostMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetingCostMeter.app/MeetingCostMeter";
+			};
+			name = Release;
+		};
+		8B4FF99E1D80213A003416FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MeetingCostMeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = excercises.oneandonly.MeetingCostMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MeetingCostMeter;
+			};
+			name = Debug;
+		};
+		8B4FF99F1D80213A003416FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MeetingCostMeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = excercises.oneandonly.MeetingCostMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MeetingCostMeter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B4FF96A1D80213A003416FF /* Build configuration list for PBXProject "MeetingCostMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4FF9951D80213A003416FF /* Debug */,
+				8B4FF9961D80213A003416FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B4FF9971D80213A003416FF /* Build configuration list for PBXNativeTarget "MeetingCostMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4FF9981D80213A003416FF /* Debug */,
+				8B4FF9991D80213A003416FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B4FF99A1D80213A003416FF /* Build configuration list for PBXNativeTarget "MeetingCostMeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4FF99B1D80213A003416FF /* Debug */,
+				8B4FF99C1D80213A003416FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B4FF99D1D80213A003416FF /* Build configuration list for PBXNativeTarget "MeetingCostMeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4FF99E1D80213A003416FF /* Debug */,
+				8B4FF99F1D80213A003416FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B4FF9671D80213A003416FF /* Project object */;
+}
