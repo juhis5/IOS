@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MeetingCostMeter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,113 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meeting Cost Meter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Slk-uP-rLq">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aaD-Ca-9Op"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of the meeting" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RQJ-iS-Pg2">
+                                <rect key="frame" x="20" y="57" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8dw-as-Pp6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount of participants" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBf-Dz-2C1">
+                                <rect key="frame" x="20" y="95" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JFh-tx-h54"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Avarage salary per hour" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hw3-u7-wG0">
+                                <rect key="frame" x="20" y="133" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DEd-Wd-8CH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBv-gw-WPq">
+                                <rect key="frame" x="20" y="171" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LI5-0C-49x"/>
+                                </constraints>
+                                <state key="normal" title="Start the meeting"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it worth it?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz2-wj-VX4">
+                                <rect key="frame" x="20" y="571" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="zNu-xg-IE5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ln5-hE-uej">
+                                <rect key="frame" x="20" y="209" width="560" height="354"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 €" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kir-r2-Kch">
+                                        <rect key="frame" x="0.0" y="153" width="560" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kir-r2-Kch" secondAttribute="trailing" id="4HG-7q-Cho"/>
+                                    <constraint firstItem="kir-r2-Kch" firstAttribute="centerY" secondItem="Ln5-hE-uej" secondAttribute="centerY" id="D6H-gz-Kjp"/>
+                                    <constraint firstItem="kir-r2-Kch" firstAttribute="centerX" secondItem="Ln5-hE-uej" secondAttribute="centerX" id="Jsm-6E-IZP"/>
+                                    <constraint firstAttribute="bottom" secondItem="kir-r2-Kch" secondAttribute="bottom" constant="153" id="fH4-99-UlC"/>
+                                    <constraint firstItem="kir-r2-Kch" firstAttribute="leading" secondItem="Ln5-hE-uej" secondAttribute="leading" id="lwD-Dv-Q56"/>
+                                    <constraint firstItem="kir-r2-Kch" firstAttribute="width" secondItem="Ln5-hE-uej" secondAttribute="width" id="m3G-Tt-brX"/>
+                                    <constraint firstItem="kir-r2-Kch" firstAttribute="top" secondItem="Ln5-hE-uej" secondAttribute="top" constant="153" id="vlY-wJ-AAJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NBf-Dz-2C1" firstAttribute="top" secondItem="RQJ-iS-Pg2" secondAttribute="bottom" constant="8" symbolic="YES" id="6OF-R2-jtG"/>
+                            <constraint firstItem="NBf-Dz-2C1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="9op-20-oPc"/>
+                            <constraint firstItem="bz2-wj-VX4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="AZx-tZ-gO9"/>
+                            <constraint firstItem="Slk-uP-rLq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Gfk-34-Ssh"/>
+                            <constraint firstAttribute="trailing" secondItem="Hw3-u7-wG0" secondAttribute="trailing" constant="20" symbolic="YES" id="H5C-Y6-7ge"/>
+                            <constraint firstItem="Slk-uP-rLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="L3f-e1-tGs"/>
+                            <constraint firstAttribute="trailing" secondItem="Ln5-hE-uej" secondAttribute="trailing" constant="20" symbolic="YES" id="MR3-Rv-0DW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bz2-wj-VX4" secondAttribute="bottom" constant="8" symbolic="YES" id="QSz-8Q-c1g"/>
+                            <constraint firstItem="RQJ-iS-Pg2" firstAttribute="top" secondItem="Slk-uP-rLq" secondAttribute="bottom" constant="8" symbolic="YES" id="UU9-c5-Yfg"/>
+                            <constraint firstItem="SBv-gw-WPq" firstAttribute="top" secondItem="Hw3-u7-wG0" secondAttribute="bottom" constant="8" symbolic="YES" id="XaU-87-rFH"/>
+                            <constraint firstItem="Hw3-u7-wG0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="YDA-zr-z5p"/>
+                            <constraint firstAttribute="trailing" secondItem="bz2-wj-VX4" secondAttribute="trailing" constant="20" symbolic="YES" id="Ypr-6P-Uru"/>
+                            <constraint firstItem="bz2-wj-VX4" firstAttribute="top" secondItem="Ln5-hE-uej" secondAttribute="bottom" constant="8" symbolic="YES" id="ck6-1X-m0o"/>
+                            <constraint firstItem="Ln5-hE-uej" firstAttribute="top" secondItem="SBv-gw-WPq" secondAttribute="bottom" constant="8" symbolic="YES" id="kJC-q2-oZg"/>
+                            <constraint firstAttribute="trailing" secondItem="SBv-gw-WPq" secondAttribute="trailing" constant="20" symbolic="YES" id="lLf-dp-MMd"/>
+                            <constraint firstItem="Hw3-u7-wG0" firstAttribute="top" secondItem="NBf-Dz-2C1" secondAttribute="bottom" constant="8" symbolic="YES" id="mwi-HJ-UQd"/>
+                            <constraint firstItem="SBv-gw-WPq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="o4q-LB-48T"/>
+                            <constraint firstItem="Ln5-hE-uej" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="qMO-IK-feW"/>
+                            <constraint firstAttribute="trailing" secondItem="RQJ-iS-Pg2" secondAttribute="trailing" constant="20" symbolic="YES" id="tjW-nu-Ble"/>
+                            <constraint firstAttribute="trailing" secondItem="Slk-uP-rLq" secondAttribute="trailing" constant="20" symbolic="YES" id="vNJ-s0-cca"/>
+                            <constraint firstAttribute="trailing" secondItem="NBf-Dz-2C1" secondAttribute="trailing" constant="20" symbolic="YES" id="vqj-4e-tTd"/>
+                            <constraint firstItem="RQJ-iS-Pg2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="zOe-cc-HxY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="Slk-uP-rLq" id="mHn-dy-PY0"/>
+                        <outlet property="nameOfMeting" destination="RQJ-iS-Pg2" id="CoT-Dg-UpQ"/>
+                        <outlet property="participantAmount" destination="NBf-Dz-2C1" id="Bbr-eA-feI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="539" y="378"/>
         </scene>
     </scenes>
 </document>

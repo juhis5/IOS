@@ -1,17 +1,14 @@
 //
 //  ViewController.swift
-//  MeetingCostMeter
+//  excer01
 //
-//  Created by developer on 07/09/16.
+//  Created by developer on 14/09/16.
 //  Copyright © 2016 Juho Lahtinen. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var mainLabel: UILabel!
-    @IBOutlet weak var nameOfMeting: UITextField!
-    @IBOutlet weak var participantAmount: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
