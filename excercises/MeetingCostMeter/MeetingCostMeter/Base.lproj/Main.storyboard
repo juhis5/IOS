@@ -40,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="30" id="JFh-tx-h54"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Avarage salary per hour" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hw3-u7-wG0">
                                 <rect key="frame" x="20" y="133" width="560" height="30"/>
@@ -48,7 +48,7 @@
                                     <constraint firstAttribute="height" constant="30" id="DEd-Wd-8CH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBv-gw-WPq">
                                 <rect key="frame" x="20" y="171" width="560" height="30"/>
@@ -56,6 +56,9 @@
                                     <constraint firstAttribute="height" constant="30" id="LI5-0C-49x"/>
                                 </constraints>
                                 <state key="normal" title="Start the meeting"/>
+                                <connections>
+                                    <action selector="startMeeting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3a-zF-YKP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is it worth it?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz2-wj-VX4">
                                 <rect key="frame" x="20" y="571" width="560" height="21"/>
@@ -115,7 +118,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="avarageSalary" destination="Hw3-u7-wG0" id="7Py-mF-hhi"/>
+                        <outlet property="costLabel" destination="kir-r2-Kch" id="CUw-S6-VCc"/>
                         <outlet property="mainLabel" destination="Slk-uP-rLq" id="mHn-dy-PY0"/>
+                        <outlet property="meetingButton" destination="SBv-gw-WPq" id="gyl-Jc-Vej"/>
                         <outlet property="nameOfMeting" destination="RQJ-iS-Pg2" id="CoT-Dg-UpQ"/>
                         <outlet property="participantAmount" destination="NBf-Dz-2C1" id="Bbr-eA-feI"/>
                     </connections>
