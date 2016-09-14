@@ -70,6 +70,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         meetingModel.longitude = locations.first?.coordinate.longitude
         print("Latitude : " + String(meetingModel.latitude!))
         print("Longitude : " + String(meetingModel.longitude!))
+        myViewController.updateName(locations.first!)
     }
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {

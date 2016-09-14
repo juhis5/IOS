@@ -15,6 +15,7 @@ class ViewController: UIViewController  {
     @IBOutlet weak var costLabel: UILabel!
     @IBOutlet weak var nameOfMeting: UITextField!
     @IBOutlet weak var participantAmount: UITextField!
+    @IBOutlet weak var loadingCircle: UIActivityIndicatorView!
 
     @IBOutlet weak var avarageSalary: UITextField!
     
@@ -25,8 +26,10 @@ class ViewController: UIViewController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
+        if(!loadingCircle.isAnimating()){
+            loadingCircle.startAnimating()
+        }
+        loadingCircle.hidesWhenStopped = true
         
     }
 
@@ -39,38 +42,9 @@ class ViewController: UIViewController  {
     @IBAction func startMeeting(sender: AnyObject) {
         if(meeting.isMeetingOn) {
             stopMeeting()
-            meeting.endMeeting()
-            meetingButton.setTitle("Start meeting", forState: UIControlState.Normal)
+            
         } else {
-            var pIntAmont : Int = 0
-            var salaryInt : Double = 0
-            var meetingName : String = ""
-        
-            if let pAmount : String = participantAmount.text {
-                pIntAmont = Int(pAmount)!
-            } else {
-                return;
-            }
-        
-            if let salary : String = avarageSalary.text{
-                salaryInt = Double(salary)!
-            } else {
-                return;
-            }
-        
-            if let meetingN :String  = nameOfMeting.text {
-                meetingName = meetingN
-            }
-        
-            meeting.avarageHourSalary = salaryInt
-            meeting.currency = "Euro"
-            meeting.numberOfParticipants = pIntAmont
-        
-            meeting.startMeeting()
-            
-            timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(printCurrenCost), userInfo: nil, repeats: true)
-            
-            meetingButton.setTitle("Stop meeting", forState: UIControlState.Normal)
+            startMeeting()
         }
     }
     
@@ -82,12 +56,57 @@ class ViewController: UIViewController  {
         costLabel.text = String(cost) + " €"
     }
     
+    func startMeeting() {
+        var pIntAmont : Int = 0
+        var salaryInt : Double = 0
         
+        if let pAmount : String = participantAmount.text {
+            pIntAmont = Int(pAmount)!
+        } else {
+            return;
+        }
+        
+        if let salary : String = avarageSalary.text{
+            salaryInt = Double(salary)!
+        } else {
+            return;
+        }
+        
+        meeting.avarageHourSalary = salaryInt
+        meeting.currency = "Euro"
+        meeting.numberOfParticipants = pIntAmont
+        
+        meeting.startMeeting()
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(printCurrenCost), userInfo: nil, repeats: true)
+        
+        meetingButton.setTitle("Stop meeting", forState: UIControlState.Normal)
+    }
+    
+    
     func stopMeeting() -> Void {
         if (timer != nil){
             timer.invalidate()
             meeting.endMeeting()
+            meetingButton.setTitle("Start meeting", forState: UIControlState.Normal)
         }
+    }
+    
+    func updateName(location: CLLocation) {
+        let geoCoder = CLGeocoder.init()
+        geoCoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) in
+            if error == nil && placemarks!.count > 0 {
+                let location = placemarks![0] as CLPlacemark
+                self.nameOfMeting.text = "\(location.locality!), \(location.thoroughfare!)"
+            }
+        })
+        
+        loadingCircle.stopAnimating()
+        
+    }
+    
+    func nameUpdateDone() -> Void {
+        
     }
 }
 

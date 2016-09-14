@@ -90,9 +90,13 @@
                                     <constraint firstItem="kir-r2-Kch" firstAttribute="top" secondItem="Ln5-hE-uej" secondAttribute="top" constant="153" id="vlY-wJ-AAJ"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PBP-6a-ir8">
+                                <rect key="frame" x="560" y="62" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="NBf-Dz-2C1" firstAttribute="top" secondItem="PBP-6a-ir8" secondAttribute="bottom" constant="13" id="3NG-Hk-Ubi"/>
                             <constraint firstItem="NBf-Dz-2C1" firstAttribute="top" secondItem="RQJ-iS-Pg2" secondAttribute="bottom" constant="8" symbolic="YES" id="6OF-R2-jtG"/>
                             <constraint firstItem="NBf-Dz-2C1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="9op-20-oPc"/>
                             <constraint firstItem="bz2-wj-VX4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="AZx-tZ-gO9"/>
@@ -101,6 +105,7 @@
                             <constraint firstItem="Slk-uP-rLq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="L3f-e1-tGs"/>
                             <constraint firstAttribute="trailing" secondItem="Ln5-hE-uej" secondAttribute="trailing" constant="20" symbolic="YES" id="MR3-Rv-0DW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bz2-wj-VX4" secondAttribute="bottom" constant="8" symbolic="YES" id="QSz-8Q-c1g"/>
+                            <constraint firstAttribute="trailing" secondItem="PBP-6a-ir8" secondAttribute="trailing" constant="20" symbolic="YES" id="Tp6-Rv-JSz"/>
                             <constraint firstItem="RQJ-iS-Pg2" firstAttribute="top" secondItem="Slk-uP-rLq" secondAttribute="bottom" constant="8" symbolic="YES" id="UU9-c5-Yfg"/>
                             <constraint firstItem="SBv-gw-WPq" firstAttribute="top" secondItem="Hw3-u7-wG0" secondAttribute="bottom" constant="8" symbolic="YES" id="XaU-87-rFH"/>
                             <constraint firstItem="Hw3-u7-wG0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="YDA-zr-z5p"/>
@@ -110,6 +115,7 @@
                             <constraint firstAttribute="trailing" secondItem="SBv-gw-WPq" secondAttribute="trailing" constant="20" symbolic="YES" id="lLf-dp-MMd"/>
                             <constraint firstItem="Hw3-u7-wG0" firstAttribute="top" secondItem="NBf-Dz-2C1" secondAttribute="bottom" constant="8" symbolic="YES" id="mwi-HJ-UQd"/>
                             <constraint firstItem="SBv-gw-WPq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="o4q-LB-48T"/>
+                            <constraint firstItem="PBP-6a-ir8" firstAttribute="top" secondItem="Slk-uP-rLq" secondAttribute="bottom" constant="13" id="q3g-sm-V8o"/>
                             <constraint firstItem="Ln5-hE-uej" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="qMO-IK-feW"/>
                             <constraint firstAttribute="trailing" secondItem="RQJ-iS-Pg2" secondAttribute="trailing" constant="20" symbolic="YES" id="tjW-nu-Ble"/>
                             <constraint firstAttribute="trailing" secondItem="Slk-uP-rLq" secondAttribute="trailing" constant="20" symbolic="YES" id="vNJ-s0-cca"/>
@@ -120,6 +126,7 @@
                     <connections>
                         <outlet property="avarageSalary" destination="Hw3-u7-wG0" id="7Py-mF-hhi"/>
                         <outlet property="costLabel" destination="kir-r2-Kch" id="CUw-S6-VCc"/>
+                        <outlet property="loadingCircle" destination="PBP-6a-ir8" id="mTU-sB-jbS"/>
                         <outlet property="mainLabel" destination="Slk-uP-rLq" id="mHn-dy-PY0"/>
                         <outlet property="meetingButton" destination="SBv-gw-WPq" id="gyl-Jc-Vej"/>
                         <outlet property="nameOfMeting" destination="RQJ-iS-Pg2" id="CoT-Dg-UpQ"/>
