@@ -18,6 +18,7 @@
 		8B67676B1DA4E82100869830 /* tmp.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B67676A1DA4E82100869830 /* tmp.png */; };
 		8B67676D1DA4E8EF00869830 /* currentWeatherIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B67676C1DA4E8EF00869830 /* currentWeatherIcon.png */; };
 		8B67676F1DA4E9DF00869830 /* calendar-icon-png-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B67676E1DA4E9DF00869830 /* calendar-icon-png-14.png */; };
+		8B6767711DA4FDD300869830 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6767701DA4FDD300869830 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8B67676A1DA4E82100869830 /* tmp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tmp.png; sourceTree = "<group>"; };
 		8B67676C1DA4E8EF00869830 /* currentWeatherIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = currentWeatherIcon.png; sourceTree = "<group>"; };
 		8B67676E1DA4E9DF00869830 /* calendar-icon-png-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar-icon-png-14.png"; sourceTree = "<group>"; };
+		8B6767701DA4FDD300869830 /* WeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				8B6767431DA4D83A00869830 /* LaunchScreen.storyboard */,
 				8B6767461DA4D83A00869830 /* Info.plist */,
 				8B6767681DA4DBAA00869830 /* ForecastViewController.swift */,
+				8B6767701DA4FDD300869830 /* WeatherModel.swift */,
 			);
 			path = weather;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				8B67673D1DA4D83A00869830 /* ViewController.swift in Sources */,
 				8B67673B1DA4D83A00869830 /* AppDelegate.swift in Sources */,
+				8B6767711DA4FDD300869830 /* WeatherModel.swift in Sources */,
 				8B6767691DA4DBAA00869830 /* ForecastViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
