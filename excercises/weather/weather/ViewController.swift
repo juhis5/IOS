@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var loadingCircle: UIActivityIndicatorView!
     @IBOutlet weak var cityName: UILabel!
     @IBOutlet weak var weatherImg: UIImageView!
     @IBOutlet weak var tempLabel: UILabel!
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadingCircle.hidesWhenStopped = true
+        loadingCircle.startAnimating()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +35,8 @@ class ViewController: UIViewController {
             let celcius :Double = (self.weather?.temperature!)! - 273.15
             self.weatherImg.image = UIImage(data: (self.weather?.img)!)
             self.tempLabel.text = String(Double(round(10*celcius)/10)) + "°C"
+            
+            self.loadingCircle.stopAnimating()
         }
         
     }

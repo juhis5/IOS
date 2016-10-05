@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tmp.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q5K-ro-2z0">
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tmp.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q5K-ro-2z0">
                                 <rect key="frame" x="40" y="275" width="520" height="50"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saratoga" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjk-VG-A0u">
@@ -27,12 +27,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGB-6F-3ko">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGB-6F-3ko">
                                 <rect key="frame" x="40" y="333" width="520" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="caK-Wx-Wqy">
+                                <rect key="frame" x="40" y="28" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,11 +48,14 @@
                             <constraint firstItem="sGB-6F-3ko" firstAttribute="top" secondItem="Q5K-ro-2z0" secondAttribute="bottom" constant="8" symbolic="YES" id="BVv-4Z-bgC"/>
                             <constraint firstItem="sGB-6F-3ko" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="LOq-Ze-vfr"/>
                             <constraint firstItem="pjk-VG-A0u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="217" id="bm1-Yh-jZd"/>
+                            <constraint firstItem="caK-Wx-Wqy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="oX4-OI-oYJ"/>
+                            <constraint firstItem="caK-Wx-Wqy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="u8Z-cS-LVP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Current Weather" image="currentWeatherIcon.png" id="1Ug-Gt-v2Z"/>
                     <connections>
                         <outlet property="cityName" destination="pjk-VG-A0u" id="Zrg-pe-Bmk"/>
+                        <outlet property="loadingCircle" destination="caK-Wx-Wqy" id="Rhy-TX-iHn"/>
                         <outlet property="tempLabel" destination="sGB-6F-3ko" id="cNW-1E-rBH"/>
                         <outlet property="weatherImg" destination="Q5K-ro-2z0" id="Ixb-9E-DSa"/>
                     </connections>
